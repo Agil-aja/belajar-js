@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EXAMPLE</title>
+</head>
+<body>
+    <h1 id="title">JAVASCRIPT</h1>
+    <button id="changetext">UBAH TEXT</button>
+    <script>
+        //akses elemen dom
+        const titleelement = document.getElementById("title");
+        const button = document.getElementById("changetext");
+        button.addEventListener("click",() => {
+            titleelement.textContent = "hello dom";      
+    }
+    );
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mengakses dan memanipulasi elemen</title>
+</head>
+<body>
+    <h1 id="header">helo pplg</h1>
+    <p class="description">contoh proggram</p>
+    <button id="changecontent">ubah context</button>
+    <script>
+        //mengakses elemen menggunakan document object
+        const header = document.getElementById("header");
+        const paragraph = document.querySelector(".description");
+        const button = document.getElementById("          ");
+
+        //memanipulasi konten elemen
+        button.addEventListener("click", () =>{
+            header.textContent = "helo, document object";
+            paragraph.textContent = "content telah di ubah oleh document";
+        });
+    </script>
+</body>
+</html>
