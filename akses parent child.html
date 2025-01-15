@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akses</title>
+</head>
+<body>
+    <div id="parent">
+        <h1>PARENT ELEMEN</h1>
+        <p>children 1</p>
+        <p>children 2</p>
+
+    </div>
+    <script>
+        const parent = document.getElementById("parent");
+        //akses perent
+        console.log("parent node name : ", parent.parentnode.nodename);
+        //akses achildren
+        console.log("all child nodes : ", parent.childnodes);
+        console.log("only element children : ", parent.children);
+        console.log("first child : ", parent.fristchild);
+        console.log("all elemen child : ", parent.firstelementchild);
+
+    </script>
+</body>
+</html>
